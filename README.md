@@ -1,11 +1,9 @@
-
-## 🩺 Medivoice — AI Medical Voice Assistant
-
-**Author: Sarthak Gupta**
-`<br>`
-**Live Demo:** https://ai-medi-assist-nu.vercel.app
-`<br>`
-Medivoice is an **AI-powered voice assistant for healthcare**, designed to make medical interactions smarter, faster, and more human-centric.
+## 🩺 Medivoice — AI Medical Voice Assistant  
+**Author: Sarthak Gupta**  
+<br>
+**Live Demo:** https://ai-medi-assist-nu.vercel.app  
+<br>
+Medivoice is an **AI-powered voice assistant for healthcare**, designed to make medical interactions smarter, faster, and more human-centric.  
 It enables **real-time symptom analysis, prescription support, and health record automation** — reducing clinical workload while empowering patients with compassionate AI.
 
 ---
