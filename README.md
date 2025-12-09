@@ -1,4 +1,4 @@
-##🩺 Medivoice — AI Medical Voice Assistant
+🩺 Medivoice — AI Medical Voice Assistant
 
 Author: Sarthak Gupta
 Live Demo: https://ai-medi-assist-nu.vercel.app
