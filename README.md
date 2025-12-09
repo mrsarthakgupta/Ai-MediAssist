@@ -1,5 +1,10 @@
 # 🩺 Medivoice — AI Medical Voice Assistant
 
+<<<<<<< HEAD
+=======
+Author: Sarthak Gupta
+Live Demo: https://ai-medi-assist-nu.vercel.app
+>>>>>>> 0eed51e1b1e7cc65c38525493c67d310c3a9468e
 Medivoice is an **AI-powered voice assistant for healthcare**, designed to make medical interactions smarter, faster, and more human-centric.
 It enables **real-time symptom analysis, prescription support, and health record automation** — reducing the clinical workload while empowering patients with compassionate AI.
 
@@ -140,8 +145,7 @@ Deploy the application using one of the following platforms:
 📚 Learn More
 
 - Check out the [Next.js Documentation](https://nextjs.org/docs) for advanced features and best practices.
-- Explore the [Medivoice Wiki](https://github.com/rajeshchau/Medivoice/wiki) for detailed setup guides and feature documentation.
-- Contribute to the project by submitting feedback or pull requests to the [Medivoice GitHub repository](https://github.com/rajeshchau/Medivoice).
+- Contribute to the project by submitting feedback or pull requests to the [Medivoice GitHub repository](https://github.com/mrsarthakgupta/Ai-MediAssist.git).
 
 ---
 
@@ -163,14 +167,16 @@ Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
 
+<<<<<<< HEAD
 ## 📬 Contact
 
 For questions or support, reach out via:
 
 - **GitHub Issues**: [https://github.com/rajeshchau/Medivoice/issues](https://github.com/rajeshchau/Medivoice/issues)
 - **Email**: [rc8807928@gmail.com](mailto:rc8807928@gmail.com)
+=======
+>>>>>>> 0eed51e1b1e7cc65c38525493c67d310c3a9468e
 
 ---
 
