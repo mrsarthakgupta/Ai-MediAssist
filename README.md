@@ -1,8 +1,13 @@
-# 🩺 Medivoice — AI Medical Voice Assistant
+##🩺 Medivoice — AI Medical Voice Assistant
 
-Medivoice is an **AI-powered voice assistant for healthcare**, designed to make medical interactions smarter, faster, and more human-centric.  
-It enables **real-time symptom analysis, prescription support, and health record automation** — reducing the clinical workload while empowering patients with compassionate AI.
+Author: Sarthak Gupta
+Live Demo: https://ai-medi-assist-nu.vercel.app
 
+Medivoice is an advanced AI-powered medical voice assistant that allows users to speak directly with specialized AI doctors.
+It performs real-time voice conversations, symptom analysis, medical report generation, and session storage —
+making it feel like you're talking to a real doctor.
+
+Built with Next.js + Vapi + Gemini + Drizzle + Neon + Clerk, it is fast, scalable, and production-ready.
 ---
 
 ## ✨ Features
@@ -40,121 +45,89 @@ Example:
 
 ---
 
-## 🚀 Getting Started
-
-Follow these steps to set up and run the Medivoice project locally.
-
-### Prerequisites
-- **Node.js** (v18 or higher)
-- **npm**, **yarn**, **pnpm**, or **bun** (package manager of your choice)
-- **Git** (for cloning the repository)
-- (Optional) **Docker** (for containerized deployment)
-- (Optional) API keys for Speech AI services (e.g., OpenAI Whisper, ElevenLabs, Google Speech API, AWS Polly)
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/rajeshchau/Medivoice.git
+🚀 Getting Started
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/Medivoice.git
 cd Medivoice
-```
 
-### 2️⃣ Install Dependencies
-Install the required packages using your preferred package manager:
-```bash
-# Using npm
+2️⃣ Install Dependencies
 npm install
 
-# Or using yarn
-yarn install
+3️⃣ Setup Environment Variables
 
-# Or using pnpm
-pnpm install
+Create a .env.local file:
 
-# Or using bun
-bun install
-```
-
-### 3️⃣ Configure Environment Variables
-Create a `.env.local` file in the root directory and add the necessary environment variables. Example:
-```env
 DATABASE_URL=
+
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=
-NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=
-NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=
-NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=
-NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+
 OPEN_ROUTER_API_KEY=
+
 NEXT_PUBLIC_VAPI_API_KEY=
 NEXT_PUBLIC_VAPI_VOICE_ASSISTANT_ID=
-```
 
-Refer to `.env.example` for a complete list of required variables.
 
-### 4️⃣ Run the Development Server
-Start the development server with:
-```bash
-# Using npm
+Check .env.example (if exists) for reference.
+
+4️⃣ Run the Development Server
 npm run dev
 
-# Or using yarn
-yarn dev
 
-# Or using pnpm
-pnpm dev
+Visit:
+👉 http://localhost:3000
 
-# Or using bun
-bun dev
-```
+🗄 Database Setup (Neon + Drizzle)
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+Run database migrations:
 
-### 5️⃣ Edit and Explore
-- Start editing the project by modifying `app/page.tsx`. The page will auto-update as you make changes.
-- Explore the codebase to customize features like symptom analysis, prescription support, or health record automation.
+npx drizzle-kit push
 
-### 6️⃣ (Optional) Deploy
-Deploy the application using one of the following platforms:
-- **Vercel**: Follow the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for seamless deployment.
-- **Docker**: Build and run the containerized app:
-  ```bash
-  docker build -t medivoice .
-  docker run -p 3000:3000 medivoice
-  ```
-- **Render/Railway**: Configure your deployment pipeline as per their respective guides.
+📡 Vapi Voice Assistant Setup
 
----
+Go to Vapi Dashboard
 
-## 📚 Learn More
-- Check out the [Next.js Documentation](https://nextjs.org/docs) for advanced features and best practices.
-- Explore the [Medivoice Wiki](https://github.com/rajeshchau/Medivoice/wiki) for detailed setup guides and feature documentation.
-- Contribute to the project by submitting feedback or pull requests to the [Medivoice GitHub repository](https://github.com/rajeshchau/Medivoice).
+Create an Assistant
 
----
+Configure voice, model, transcriber
 
-## 🤝 Contributing
-We welcome contributions to Medivoice! To get started:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes and commit (`git commit -m "Add your feature"`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a pull request.
+Copy the Assistant ID → put in .env.local
 
-Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details.
+Your app will trigger calls dynamically
 
----
+🎯 Deployment (Vercel)
 
-## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Push project to GitHub
 
----
+Import repository into Vercel
 
-## 📬 Contact
-For questions or support, reach out via:
-- **GitHub Issues**: [https://github.com/rajeshchau/Medivoice/issues](https://github.com/rajeshchau/Medivoice/issues)
-- **Email**: [rc8807928@gmail.com](mailto:rc8807928@gmail.com)
+Add environment variables
 
----
+Deploy
 
+Live Demo: https://ai-medi-assist-nu.vercel.app
+
+🤝 Contributing
+
+This project is currently personal (by Sarthak Gupta).
+If opened publicly, contributions will be welcomed via:
+
+git checkout -b feature/new-feature
+git commit -m "Add new feature"
+git push origin feature/new-feature
+
+📜 License
+
+This project is licensed under the MIT License.
+
+👤 Author
+
+Sarthak Gupta
+Developer • Creator of Medivoice
 © 2025 Medivoice. All rights reserved.
