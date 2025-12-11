@@ -58,8 +58,8 @@ Follow these steps to set up and run the Medivoice project locally.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/rajeshchau/Medivoice.git
-cd Medivoice
+git clone https://github.com/mrsarthakgupta/Ai-MediAssist.git
+cd Ai-MediAssist
 ```
 
 ### 2️⃣ Install Dependencies
@@ -82,7 +82,7 @@ bun install
 
 ### 3️⃣ Configure Environment Variables
 
-Create a `.env.local` file in the root directory and add the necessary environment variables. Example:
+Create a `.env` file in the root directory and add the necessary environment variables. Example:
 
 ```env
 DATABASE_URL=
@@ -98,8 +98,6 @@ OPEN_ROUTER_API_KEY=
 NEXT_PUBLIC_VAPI_API_KEY=
 NEXT_PUBLIC_VAPI_VOICE_ASSISTANT_ID=
 ```
-
-Refer to `.env.example` for a complete list of required variables.
 
 ### 4️⃣ Run the Development Server
 
@@ -126,45 +124,59 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 - Start editing the project by modifying `app/page.tsx`. The page will auto-update as you make changes.
 - Explore the codebase to customize features like symptom analysis, prescription support, or health record automation.
 
-### 6️⃣ (Optional) Deploy
+### 6️⃣ Deployment Options
 
-Deploy the application using one of the following platforms:
+▶ Vercel (Recommended)
+1. Push the repository to GitHub  
+2. Connect your project to **Vercel**  
+3. Add `.env` values under **Environment Variables**  
+4. Click **Deploy** 🚀  
 
-- **Vercel**: Follow the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for seamless deployment.
-- **Docker**: Build and run the containerized app:
-  ```bash
-  docker build -t medivoice .
-  docker run -p 3000:3000 medivoice
-  ```
-- **Render/Railway**: Configure your deployment pipeline as per their respective guides.
+▶ Docker
+```bash
+docker build -t medivoice .
+docker run -p 3000:3000 medivoice
+```
+▶ Render / Railway
+1. Create a new Web Service
+2. Add all required Environment Variables
+3. Choose your branch & deploy
+4. The server will auto-build and start 🎯
 
----
+## 📂 Project Structure
 
-📚 Learn More
+<details>
+<summary><strong>📦 Click to expand the full project structure</strong></summary>
 
-- Check out the [Next.js Documentation](https://nextjs.org/docs) for advanced features and best practices.
-- Contribute to the project by submitting feedback or pull requests to the [Medivoice GitHub repository](https://github.com/mrsarthakgupta/Ai-MediAssist.git).
+    Ai-MediAssist/
+    │── app/              # Next.js App Router pages & routes
+    │── components/       # UI components
+    │── config/           # Configurations
+    │── context/          # Global Context
+    │── drizzle/          # Database schema & ORM
+    │── lib/              # Helpers & utilities
+    │── public/           # Static assets
+    │── shared/           # Common logic
+    │── .env              # Environment variables
+    │── next.config.ts    # Next.js config
+    │── tsconfig.json     # TypeScript config
+    │── package.json
+    │── README.md
 
----
+</details>
+  
+## 📌 Future Improvements (Roadmap)
+-  🗣️ Multi-language speech support
+-  🏥 Doctor dashboard with patient history  
+-  🤝 HIPAA/GDPR compliant storage 
+ 
+## 🎯 Summary
+Medivoice is an AI-powered medical voice assistant that enables real-time symptom analysis, prescription support, and automated medical record generation. Built to showcase modern full-stack + AI integration in a healthcare workflow.
 
-## 🤝 Contributing
+## ⭐ Author
 
-We welcome contributions to Medivoice! To get started:
+**Sarthak Gupta**
+<br>
+Full Stack Developer — AI · Next.js · Node · Cloud
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes and commit (`git commit -m "Add your feature"`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a pull request.
-
-Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-© 2025 Medivoice. All rights reserved.
+If you like this project, consider ⭐ starring the repo!
